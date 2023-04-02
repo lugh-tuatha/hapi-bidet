@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import BidetHero from './components/BidetHero'
+import SectionContainer from './components/SectionContainer'
 
+function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div>
+      <BidetHero />
+      <SectionContainer />
     </div>
   )
 }
