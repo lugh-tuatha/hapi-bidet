@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import balloon from '../assets/img/balloon.png'
 import celebration from '../assets/img/1.png'
 import play from '../assets/img/play.png'
 
+import Modal from './Modal'
+
 function BidetHero() {
+  const [modalOn, setModalOn] = useState(false);
+  const [choice, setChoice] = useState(false);
+
+  const clicked = () => {
+    setModalOn(true)
+  }
+
   return (
     <div className='w-11/12 mx-auto bg-secondary mt-4 rounded-2xl h-72'>
       <img src={celebration} className='absolute left-1/4 hidden lg:block'/>
@@ -17,7 +26,11 @@ function BidetHero() {
         <img src={balloon}/>
         <img src={balloon}/>
       </div>
+      <div onClick={clicked}>
         <img src={play} className='w-16 absolute right-8 md:right-24 mt-2 active:scale-110' />
+      </div>
+
+      {modalOn && <Modal setModalOn={setModalOn} setChoice={setChoice}/>}
     </div>
   )
 }
