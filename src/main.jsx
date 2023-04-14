@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
+import Letter from './pages/Letter'
+import Wish from './pages/Wish'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +15,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/letter",
+    element: <Letter />,
+  },
+  {
+    path: "/wish",
+    element: <Wish />,
   },
 ]);
 
