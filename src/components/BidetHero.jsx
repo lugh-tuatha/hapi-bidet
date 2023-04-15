@@ -6,6 +6,8 @@ import play from '../assets/img/play.png'
 
 import Modal from './Modal'
 
+import * as Md from "react-icons/md";
+
 function BidetHero() {
   const [modalOn, setModalOn] = useState(false);
   const [choice, setChoice] = useState(false);
@@ -25,6 +27,14 @@ function BidetHero() {
       <div className='flex justify-between'>
         <img src={balloon}/>
         <img src={balloon}/>
+      </div>
+
+      <div className="absolute right-40 mt-6">
+        <div className="flex items-center">
+          <p className='font-thin'>click</p>
+          <Md.MdOutlineKeyboardDoubleArrowRight size={32} />
+        </div>
+        
       </div>
       <div onClick={clicked}>
         <img src={play} className='w-16 absolute right-8 md:right-24 mt-2 active:scale-110' />

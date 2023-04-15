@@ -11,6 +11,10 @@ export default {
       primary: "#FFCAC8",
       secondary: "#cdb4db",
       tertiary: "#bde0fe",
+
+      background: {
+        100: "#ffd3e2",
+      }
     },
     },
   },

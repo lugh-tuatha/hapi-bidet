@@ -5,6 +5,7 @@ import './index.css'
 
 import Letter from './pages/Letter'
 import Wish from './pages/Wish'
+import Art from './pages/Art'
 
 import {
   createBrowserRouter,
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/wish",
     element: <Wish />,
+  },
+  {
+    path: "/art",
+    element: <Art />,
   },
 ]);
 

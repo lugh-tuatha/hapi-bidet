@@ -23,6 +23,7 @@ const section = [
   },
   {
     icon: art,
+    link: '/art'
   },
   {
     icon: cssArt,
