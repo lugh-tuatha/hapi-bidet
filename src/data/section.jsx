@@ -17,6 +17,7 @@ const section = [
   },
   {
     icon: spotify,
+    link: '/spotify-message'
   },
   {
     icon: wish,
@@ -28,6 +29,7 @@ const section = [
   },
   {
     icon: cssArt,
+    link: '/css-portrait'
   },
 ]
 

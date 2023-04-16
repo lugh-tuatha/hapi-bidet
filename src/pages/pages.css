@@ -8,3 +8,24 @@
     height: auto;
   }
 }
+
+.css-portrait{
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  margin-top: 8rem;
+}
+
+.css-portrait p{
+  font-size: 8.5px;
+  line-height: 8.5px;
+  background-image: url(../assets/img/mybae.jpg);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.01);
+  background-size: 100%;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position-y: 8rem;
+  letter-spacing: 0.2px;
+  text-align: justify;
+}

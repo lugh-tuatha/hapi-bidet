@@ -5,7 +5,7 @@ import BacktoHome from '../components/BacktoHome'
 function Music() {
   return (
     <>
-      <div className="absolute">
+      <div className="absolute ">
         <BacktoHome />
       </div>
 

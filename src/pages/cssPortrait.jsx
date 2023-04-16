@@ -1,0 +1,24 @@
+import React from 'react'
+import './pages.css'
+
+import BacktoHome from '../components/BacktoHome'
+
+function cssPortrait() {
+  return (
+    <div className="absolute md:static bg-background-300 h-screen">
+      <div className="absolute">
+        <BacktoHome />
+      </div>
+
+      <p className=' place-items-center h-screen font-bold text-3xl hidden md:grid'>Hmp! wala sa pc kase wala kang landscape na pic!!!</p>
+
+      <div className='css-portrait block md:hidden'>
+        <p>
+          I like your eyes, you look away When you pretend not to care I like the dimples on the corners Of the smile that you wear I like you more the world may know But don't be scared 'Cause I'm falling deeper, baby Be prepared I like your shirt, I like your fingers Love the way that you smell To be your favourite jacket just so I could always be near I've loved you for so long Sometimes It's hard to bear But after all this time I hope you wait and see Love you every minute, every second Love you everywhere, and any moment Always and forever I know I can't quit you 'cause Baby, you're the one I don't know how Love you 'til the last Of snow disappears Love you 'til the rainy day becomes clear Never knew a love like this Now I can't let go I'm in love with you And now you know I like the way you try so hard When you play ball with your friends I like the way you hit the notes In every song, you're shining I love the little things Like when you're unaware I catch you steal a glance And smile so perfectly Though sometimes when life brings me down You're the cure, my love In a bad rainy day, you take all the worries Away Love you every minute, every second Love you everywhere, and any moment Always and forever I know I can't quit you 'cause Baby, you're the one I don't know how In a world devoid of life you bring colour In your eyes, I see the light, my future Always and forever I know I can't let you go I'm in love with you And now you know I'm in love with you And now you know I like your eyes, you look away When you pretend not to care I like the dimples on the corners Of the smile that you wear I like you more the world may know But don't be scared 'Cause I'm falling deeper, baby Be prepared I like your shirt, I like your fingers Love the way that you smell To be your favourite jacket just so I could always be near I've loved you for so long Sometimes It's hard to bear But after all this time I hope you wait and see Love you every minute, every second Love you everywhere, and any moment Always and forever I know I can't quit you 'cause Baby, you're the one I don't know how Love you 'til the last Of snow disappears Love you 'til the rainy day becomes clear Never knew a love like this Now I can't let go I'm in love with you And now you know I like the way you try so hard When you play ball with your friends I like the way you hit the notes In every song, you're shining I love the little things Like when you're unaware I catch you steal a glance And smile so perfectly Though sometimes when life brings me down You're the cure, my love In a bad rainy day, you take all the worries Away Love you every minute, every second Love you everywhere, and any moment Always and forever I know I can't quit you 'cause Baby, you're the one I don't know how In a world devoid of life you bring colour In your eyes, I see the light, my future Always and forever I know I can't let you go I'm in love with you And now you know I'm in love with you And now you know I like your eyes, you look away When you pretend not to care I like the dimples on the corners Of the smile that you wear I like you more the world may know But don't be scared 'Cause I'm falling deeper, baby Be prepared I like your shirt, I like your fingers Love the way that you smell To be your favourite jacket just so I could always be near I've loved you for so long Sometimes It's hard to bear But after all this time I hope you wait and see Love you every minute, every second Love you everywhere, and any moment Always and forever I know I can't quit you 'cause Baby, you're the one I don't know how Love you 'til the last Of snow disappears Love you 'til the rainy day becomes clear Never knew a love like this Now I can't let go I'm in love with you And now you know I like the way you try so hard When you play ball with your friends I like the way you hit the notes In every song, you're shining I love the little things Like when you're unaware I catch you steal a glance And smile so perfectly Though sometimes when life brings me down You're the cure, my love In a bad rainy
+          </p>
+      </div>
+    </div>
+  )
+}
+
+export default cssPortrait

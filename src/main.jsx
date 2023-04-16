@@ -7,6 +7,8 @@ import Letter from './pages/Letter'
 import Wish from './pages/Wish'
 import Art from './pages/Art'
 import Music from './pages/Music'
+import CssPortrait from './pages/cssPortrait'
+import SpotifyMessage from './pages/SpotifyMessage'
 
 import {
   createBrowserRouter,
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/music",
     element: <Music />,
+  },
+  {
+    path: "/css-portrait",
+    element: <CssPortrait />,
+  },
+  {
+    path: "/spotify-message",
+    element: <SpotifyMessage />,
   },
 ]);
 
