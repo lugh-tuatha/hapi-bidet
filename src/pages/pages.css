@@ -3,12 +3,6 @@
   aspect-ratio: 1/1;
 }
 
-@media screen and (max-width: 410px) {
-  .art img{
-    height: auto;
-  }
-}
-
 .css-portrait{
   font-family: 'Poppins', sans-serif;
   background: #000;
@@ -28,4 +22,19 @@
   background-position-y: 8rem;
   letter-spacing: 0.2px;
   text-align: justify;
+}
+
+.qr-letter img{
+  width: 9rem;
+  display: inline;
+}
+
+@media screen and (max-width: 410px) {
+  .art img {
+    height: auto;
+  }
+
+  .qr-codes {
+    width: 6rem;
+  }
 }

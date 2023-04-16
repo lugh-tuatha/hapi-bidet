@@ -9,8 +9,9 @@ function Music() {
         <BacktoHome />
       </div>
 
-      <div className='flex justify-center items-center bg-background-200 w-screen h-screen'>
+      <div className='flex flex-col justify-center items-center bg-background-200 w-screen h-screen'>
         <audio src="" controls></audio>
+        <p>Ginagawa mo dito? wala dito AHWHAWHAHAH </p>
       </div>
     </>
   )
