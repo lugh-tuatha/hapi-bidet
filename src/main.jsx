@@ -6,6 +6,7 @@ import './index.css'
 import Letter from './pages/Letter'
 import Wish from './pages/Wish'
 import Art from './pages/Art'
+import Music from './pages/Music'
 
 import {
   createBrowserRouter,
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/art",
     element: <Art />,
+  },
+  {
+    path: "/music",
+    element: <Music />,
   },
 ]);
 

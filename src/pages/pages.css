@@ -1,0 +1,10 @@
+.art img{
+  height: 500px;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 410px) {
+  .art img{
+    height: auto;
+  }
+}

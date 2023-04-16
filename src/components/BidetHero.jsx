@@ -18,18 +18,28 @@ function BidetHero() {
 
   return (
     <div className='w-11/12 mx-auto bg-secondary mt-4 rounded-2xl h-72'>
-      <img src={celebration} className='absolute left-1/4 hidden lg:block'/>
-      <img src={celebration} className='absolute right-1/4 hidden lg:block'/>
+      <img src={celebration} className='absolute left-1/4 hidden md:block'/>
+      <img src={celebration} className='absolute right-1/4 hidden md:block'/>
 
-      <h1 className='text-center text-3xl font-bold pt-2'>It's your birthday!!! :D</h1>
-      <p className='text-lg text-center'>Bente ka na next year!!</p>
+      <h1 className='text-center text-3xl font-bold pt-2'>Hi It's your birthday!</h1>
+      <p className='text-lg text-center font-thin'>So I realised,</p>
 
-      <div className='flex justify-between'>
-        <img src={balloon}/>
-        <img src={balloon}/>
+      <div className='flex justify-center md:justify-between mt-7 mb-3 md:m-0'>
+        <img src={balloon} className='hidden md:flex'/>
+
+        <div className='self-end font-thin text-xl text-center'>
+          <div className="flex items-center">
+            <p>I wanted to do something</p>
+            <button className=' bg-tertiary py-1 px-2 rounded-sm ml-1 font-semibold'>Special</button>
+          </div>
+          <p>Because,</p>
+          <p>You are special</p>
+        </div>
+
+        <img src={balloon} className='hidden md:flex'/>
       </div>
 
-      <div className="absolute right-40 mt-6">
+      <div className="absolute right-24 md:right-40 mt-6">
         <div className="flex items-center">
           <p className='font-thin'>click</p>
           <Md.MdOutlineKeyboardDoubleArrowRight size={32} />

@@ -13,6 +13,7 @@ const section = [
   },
   {
     icon: sing,
+    link: '/music',
   },
   {
     icon: spotify,
