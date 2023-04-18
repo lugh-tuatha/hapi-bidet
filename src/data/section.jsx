@@ -9,27 +9,39 @@ import cssArt from '../assets/img/icon/css-art.png'
 const section = [
   {
     icon: letter,
-    link: '/letter'
+    link: '/letter',
+    heading: 'Letter',
+    subHeading: 'cheese alert',
   },
   {
     icon: sing,
     link: '/music',
+    heading: 'em singing ',
+    subHeading: 'haha tanggal angas',
   },
   {
     icon: spotify,
-    link: '/spotify-message'
+    link: '/spotify-message',
+    heading: 'Letter again',
+    subHeading: 'pero mahirap basahin',
   },
   {
     icon: wish,
-    link: '/wish'
+    link: '/wish',
+    heading: 'wish vault',
+    subHeading: 'virtual wishing well yayy',
   },
   {
     icon: art,
-    link: '/art'
+    link: '/art',
+    heading: 'drawing for u',
+    subHeading: 'nahiya yung drawing ko sa drawing mo',
   },
   {
     icon: cssArt,
-    link: '/css-portrait'
+    link: '/css-portrait',
+    heading: 'css portrait',
+    subHeading: 'hindi perfect di ako marunong e',
   },
 ]
 

@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
 
-import balloon from '../assets/img/balloon.png'
-import celebration from '../assets/img/1.png'
 import play from '../assets/img/play.png'
-
 import Modal from './Modal'
 
-import * as Md from "react-icons/md";
+import shrekbidet from '../assets/img/shrek-bidet.png'
 
 function BidetHero() {
   const [modalOn, setModalOn] = useState(false);
@@ -17,40 +15,25 @@ function BidetHero() {
   }
 
   return (
-    <div className='w-11/12 mx-auto bg-secondary mt-4 rounded-2xl h-72'>
-      <img src={celebration} className='absolute left-1/4 hidden md:block'/>
-      <img src={celebration} className='absolute right-1/4 hidden md:block'/>
+    <div className='w-11/12 mx-auto mt-4 rounded-2xl'>
+      <h1 className='text-3xl font-bold pt-2'>Hi It's your birthday!</h1>
 
-      <h1 className='text-center text-3xl font-bold pt-2'>Hi It's your birthday!</h1>
-      <p className='text-lg text-center font-thin'>So I realised,</p>
-
-      <div className='flex justify-center md:justify-between mt-7 mb-3 md:m-0'>
-        <img src={balloon} className='hidden md:flex'/>
-
-        <div className='self-end font-thin text-xl text-center'>
-          <div className="flex items-center">
-            <p>I wanted to do something</p>
-            <button className=' bg-tertiary py-1 px-2 rounded-sm ml-1 font-semibold'>Special</button>
-          </div>
-          <p>Because,</p>
-          <p>You are special</p>
-        </div>
-
-        <img src={balloon} className='hidden md:flex'/>
+      <div className='border-2 border-gray-300 p-2 flex justify-between items-center rounded-xl my-2'>
+        <p className='text-lg'>Happy birthday to you! many many blah blah blah.. </p>
+        <div className="bg-blue-400 py-1 px-2 rounded-md">Send</div>
       </div>
+      <p className='text-lg font-thin mb-1'>That's what I was going to do.</p>
+      <p className='text-lg font-thin mb-1'>But then I stopped</p>
+      <p className='text-lg font-thin mb-1'> I realised,I wanted to do something <span className='font-semibold'>Special</span></p>
+      <p className='text-lg font-thin mb-1'>Because, you are special</p>
+      <p className='text-lg font-thin mb-1'>Tsaka para di puro parcel binibigay ko ehe</p>
 
-      <div className="absolute right-24 md:right-40 mt-6">
-        <div className="flex items-center">
-          <p className='font-thin'>click</p>
-          <Md.MdOutlineKeyboardDoubleArrowRight size={32} />
-        </div>
-        
-      </div>
-      <div onClick={clicked}>
-        <img src={play} className='w-16 absolute right-8 md:right-24 mt-2 active:scale-110' />
-      </div>
+      <motion.img src={play} className='w-16 save-button' onClick={clicked} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}/>
 
       {modalOn && <Modal setModalOn={setModalOn} setChoice={setChoice}/>}
+
+      <img src={shrekbidet} className='w-80 mx-auto'/>
+
     </div>
   )
 }

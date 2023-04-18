@@ -3,11 +3,12 @@ import './App.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Confetti from 'react-confetti'
 
 import BidetHero from './components/BidetHero'
 import SectionContainer from './components/SectionContainer'
+import Header from './components/Header';
 
-import dino from './assets/img/dino.png'
 
 import section from './data/section'
 
@@ -18,13 +19,23 @@ function App() {
 
   return (
     <div>
-      <BidetHero />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-11/12 mx-auto mt-4 place-items-center gap-x-5 gap-y-2 md:gap-4 ">
-        <img src={dino} className='hidden md:block' data-aos="zoom-in" data-aos-duration="800"/>
-        {section.map(sections => (
-          <SectionContainer icon={sections.icon} link={sections.link}/>
-        ))}
+      <Confetti/>
+      <Header />
+      <div className="md:px-20 md:py-12">
+
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="md:w-2/3 grid w-11/12 mx-auto md:grid-cols-3 gap-4 mt-4 md:mt-0">
+            {section.map(sections => (
+              <SectionContainer icon={sections.icon} link={sections.link} heading={sections.heading} subHeading={sections.subHeading} />
+            ))}
+          </div>
+          <div className='md:w-1/3'>
+            <BidetHero />
+          </div>
+        </div>
       </div>
+
+
     </div>
   )
 }
