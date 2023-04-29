@@ -7,7 +7,29 @@
     <title>Hapi Bidet</title>
   </head>
   <body class="bg-bodybg">
-    <div id="root"></div>
+    <div id="vanta-canvas" class="absolute top-0 h-screen -z-10 m-0 p-0 overflow-x-hidden">
+
+    </div>
+    <div id="root" class="absolute top-0 w-screen"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#vanta-canvas",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 1000.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor:"#f7f7f7",
+        color2: 0x77ff
+      })
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

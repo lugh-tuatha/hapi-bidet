@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 import AOS from 'aos';
@@ -9,17 +9,25 @@ import BidetHero from './components/BidetHero'
 import SectionContainer from './components/SectionContainer'
 import Header from './components/Header';
 
-
 import section from './data/section'
 
 function App() {
+  const [showConfetti, setShowConfetti] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowConfetti(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <div>
-      <Confetti/>
+      {showConfetti && <Confetti/>}
       <Header />
       <div className="md:px-20 md:py-12">
 
